@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/d8c78df6fe.js" crossorigin="anonymous"></script>
+    <title>LinkUp</title>
+</head>
+<body>
+
+    <div class="chat-header">
+      <img src="img/1.1.png" alt="Logo">  
+      <button class="btn" id="leave-btn">Leave Room</button>
+    </div>
+
+    <div class="chat">
+      <div class="chat-sidebar">
+        <h3><i class="fas fa-comments"></i> Room Name:</h3>
+        <h2 id="room_name"></h2>
+        <h3><i class="fas fa-users"></i> Users</h3>
+        <div id="users"></div>
+        <!-- <ul id="users"></ul> -->
+      </div>
+
+      <div class="chat-main">
+        <div id="messages" class="chat__messages"></div>
+        <div class="chat__footer">
+          <form id="message-form">
+            <input name="message" type="text" placeholder="Enter Message" autocomplete="off"/>
+            <button type="submit" class="btn" id="submit-btn">Send</button>
+            <button type="submit" class="btn" id="Send-location">Send location</button>
+          </form>  
+        </div>  
+      </div>
+  </div>
+
+
+    <script id="Room-template" type="text/template">
+      {{params}}
+    </script>
+
+    <script id="message-template" type="text/template">
+        <li class="message">
+          <div class="message__title">
+            <h4>{{from}}</h4>
+            <span>{{createdAt}}</span>
+          </div>
+          <div class="message__body">
+            <p>{{text}}</p>
+          </div>
+        </li>
+      </script>
+  
+      <script id="location-message-template" type="text/template">
+        <li class="message">
+          <div class="message__title">
+            <h4>{{from}}</h4>
+            <span>{{createdAt}}</span>
+          </div>
+          <div class="message__body">
+            <a href="{{url}}" target="_blank">My current location</a>
+          </div>
+        </li>
+      </script>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://unpkg.com/mustache@latest"></script>
+    <script type="text/javascript" src="chat.js"></script>
+    <script type="text/javascript" src="libs/moment.js"></script> <!-- This is used to create time stamp readable in client side-->
+    
+</body>
+</html>
