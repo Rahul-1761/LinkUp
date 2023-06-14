@@ -218,7 +218,7 @@ a {
 
 }
 
-@media (max-width:320px)  { 
+@media (max-width:375px)  { 
 
     .btn {
         cursor: pointer;
@@ -275,7 +275,7 @@ a {
         font-size: 15px;
         padding: 5px;
         height: 30px;
-        width: 140px;
+        width: 185px;
         flex: 1;
     }
 
@@ -299,7 +299,7 @@ a {
 
 }
 
-@media only screen and (max-width: 768px) and (min-width: 321px){
+@media only screen and (max-width: 768px) and (min-width: 375px){
 
     .chat{
         height: 82vh;
