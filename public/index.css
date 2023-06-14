@@ -218,3 +218,127 @@ a {
 
 }
 
+@media (max-width:320px)  { 
+
+    .btn {
+        cursor: pointer;
+        padding: 5px 5px;
+        background: var(--light-color-b);
+        color: var(--dark-color-a);
+        border: 0;
+        font-size: 15px;
+        border-radius: 10px;
+        margin-left: 5px;
+    }
+
+    .upper-half img{
+        width: 90%;
+    }
+
+    .centered-form__form{
+        width: 90%;
+        left: 43%
+    }
+
+    .chat-header img{
+        cursor: pointer;
+        width: 50%;
+        height: auto;
+    }
+
+    .chat-sidebar{
+        display: none;
+    }
+
+    .chat__messages{
+        overflow-y:scroll;
+        max-height: 430px;
+        padding:5px;
+        margin: 15px;
+    }
+
+    .chat__footer{
+        bottom: 0;
+        left: 8%;
+        margin-bottom: 0;
+        padding: 30px 5px;
+    }
+    
+    .chat__footer form{
+        display: flex;
+        align-items: center;
+
+    }
+    
+    .chat__footer input[type='text'] {
+        border-radius: 15px;
+        font-size: 15px;
+        padding: 5px;
+        height: 30px;
+        width: 140px;
+        flex: 1;
+    }
+
+    #submit-btn{
+        border-radius: 15px;
+        font-size: 15px;
+        padding: 5px;
+        height: 30px;
+    }
+
+    #Send-location{
+        border-radius: 15px;
+        font-size: 15px;
+        padding: 5px;
+        
+    }
+
+    .chat-main{
+        height: 81vh;
+    }
+
+}
+
+@media only screen and (max-width: 768px) and (min-width: 321px){
+
+    .chat{
+        height: 82vh;
+    }
+
+    .chat-sidebar{
+        width: 200px;
+    }
+
+    .chat__messages{
+        overflow-y:scroll;
+        max-height: 460px;
+        padding:5px;
+        margin: 15px;
+    }
+
+    .chat__footer{
+        bottom: 0;
+        left: 26%;
+        margin-bottom: 5px;
+        padding: 30px 5px;
+    }
+    
+    .chat__footer form{
+        display: flex;
+        align-items: center;
+
+    }
+    
+    .chat__footer input[type='text'] {
+        border-radius: 15px;
+        font-size: 15px;
+        padding: 5px;
+        height: 30px;
+        width: 100px;
+        flex: 1;
+    }
+
+}
+
+
+
