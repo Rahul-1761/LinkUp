@@ -252,7 +252,7 @@ a {
 
     .chat__messages{
         overflow-y:scroll;
-        max-height: 430px;
+        max-height: 450px;
         padding:5px;
         margin: 15px;
     }
@@ -261,7 +261,7 @@ a {
         bottom: 0;
         left: 8%;
         margin-bottom: 0;
-        padding: 30px 5px;
+        padding: 20px 5px;
     }
     
     .chat__footer form{
