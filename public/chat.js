@@ -158,5 +158,11 @@ document.querySelector('#Send-location').addEventListener('click', function(e){
  })
 
 
+ //Leave Button
+ document.querySelector('#leave-btn').addEventListener('click', function(){
+    window.location.href = '/';
+ })
+
+
 
  
